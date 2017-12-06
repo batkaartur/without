@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   end
   root 'welcome#index'
   get 'welcome/index'
+  get 'addnews', to: 'welcome#addnews'
   post 'welcome/download'
 end
