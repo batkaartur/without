@@ -1,0 +1,7 @@
+document.getElementById('subscribe').addEventListener('ajax:success', function (event) {
+    <% if @order.errors.any? %>
+    document.getElementById('message-field').innerHTML = "Вы ввели неверные данные";
+    <% else %>
+    document.getElementById('message-field').innerHTML = 'Ждите звонка!';
+    <% end %>
+});
