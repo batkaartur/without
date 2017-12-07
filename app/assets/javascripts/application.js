@@ -19,6 +19,7 @@
 
 $(document).ready(function () {
     $(function () {
+         $(".n-2").css("background","transparent");
         $('[data-toggle="tooltip"]').tooltip();
     });
     $(window).scroll(function () {
